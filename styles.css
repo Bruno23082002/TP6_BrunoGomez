@@ -1,41 +1,162 @@
+/* Reset Basico */
 body {
+    margin: 0;
     font-family: Arial, sans-serif;
-    background-color: #f0f0f0;
+    background-color: #f0f0ff;
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin: 0;
 }
 
+/* Contedor del formulario */
 .login-container {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ background: #ffffff;
+ padding: 20px;
+ border-radius: 8px;
+ box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+ text-align: center;
+ width: 300px;
 }
 
-h2 {
-    margin-bottom: 20px;
+h1 {
+    color: #333;
 }
 
-label,
-input {
-    display: block;
-    width: 100%;
-    margin-bottom: 10px;
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input{
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;    
 }
 
 button {
-    width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: #007bff;
     color: white;
     border: none;
-    border-radius: 5px;
+    border-radius: 4px;
     cursor: pointer;
+    font-size: 16px;
+    transition: backgroun-color 0.3s;
 }
 
-button:hover {
-    background-color: #45a049;
+button:hover{
+    background-color: #0056b3;
 }
+
+#message {
+    margin-top: 10px;
+    font-size: 14px;
+    color: red; /*cambiara dinamicamente con JS */
+}
+
+/* Contenedor principal de la página */
+.main-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #e6f7ff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  /* Mensaje de bienvenida */
+  h1 {
+    color: #333;
+    margin-bottom: 20px;
+  }
+  
+  /* Botones animados */
+  .button-container button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: transform 0.3s, background-color 0.3s;
+  }
+  
+  .button-container button:hover {
+    background-color: #0056b3;
+    transform: scale(1.1); /* Animación al pasar el mouse */
+  }
+
+  /* Contenedor del formulario */
+.form-container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff8e1;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: auto;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+  
+  label {
+    text-align: left;
+    font-weight: bold;
+  }
+  
+  input {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+  }
+  
+  button#clearForm {
+    background-color: #f44336;
+  }
+  
+  button:hover {
+    background-color: #388e3c; /* Botón enviar */
+  }
+  
+  button#clearForm:hover {
+    background-color: #d32f2f; /* Botón limpiar */
+  }
+  
+  #formMessage {
+    margin-top: 20px;
+    font-size: 14px;
+    color: blue; /* Cambiará dinámicamente con JS */
+  }
+
+  /* Estilo para el textarea */
+textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: none; /* Evita redimensionar el área de texto */
+  }
+  

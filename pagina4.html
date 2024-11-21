@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Mensaje</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Reutilizamos el CSS -->
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulario de Mensaje</h1>
+    
+    <form id="messageForm">
+      <label for="senderName">Nombre:</label>
+      <input type="text" id="senderName" placeholder="Ingresa tu nombre" required>
+
+      <label for="senderLastname">Apellido:</label>
+      <input type="text" id="senderLastname" placeholder="Ingresa tu apellido" required>
+
+      <label for="senderPhone">Celular:</label>
+      <input type="tel" id="senderPhone" placeholder="Ingresa tu número de celular" required>
+
+      <label for="senderEmail">Email:</label>
+      <input type="email" id="senderEmail" placeholder="Ingresa tu email" required>
+
+      <label for="message">Mensaje:</label>
+      <textarea id="message" rows="6" placeholder="Escribe tu mensaje aquí..." required></textarea>
+
+      <button type="submit">Enviar Mensaje</button>
+      <button type="button" id="clearMessageForm">Limpiar</button>
+    </form>
+
+    <p id="messageFeedback"></p> <!-- Mensaje dinámico al enviar -->
+  </div>
+  <script src="script.js"></script> <!-- Reutilizo el JavaScript -->
+</body>
+</html>

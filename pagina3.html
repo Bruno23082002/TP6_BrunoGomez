@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Formulario de Datos Personales</title>
+  <link rel="stylesheet" href="styles.css"> <!-- Reutilizo el CSS -->
+</head>
+<body>
+  <div class="form-container">
+    <h1>Formulario de Datos Personales</h1>
+    
+    <form id="personalDataForm">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" placeholder="Ingresa tu nombre" required>
+
+      <label for="lastname">Apellido:</label>
+      <input type="text" id="lastname" placeholder="Ingresa tu apellido" required>
+
+      <label for="age">Edad:</label>
+      <input type="number" id="age" placeholder="Ingresa tu edad" required>
+
+      <label for="address">Dirección:</label>
+      <input type="text" id="address" placeholder="Ingresa tu dirección" required>
+
+      <label for="phone">Celular:</label>
+      <input type="tel" id="phone" placeholder="Ingresa tu número de celular" required>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" placeholder="Ingresa tu email" required>
+
+      <label for="city">Ciudad:</label>
+      <input type="text" id="city" placeholder="Ingresa tu ciudad" required>
+
+      <label for="country">País:</label>
+      <input type="text" id="country" placeholder="Ingresa tu país" required>
+
+      <button type="submit">Enviar</button>
+      <button type="button" id="clearForm">Limpiar</button>
+    </form>
+
+    <p id="formMessage"></p> <!-- Mensaje dinámico al enviar -->
+  </div>
+  <script src="script.js"></script> <!-- Reutilizo el JavaScript -->
+</body>
+</html>

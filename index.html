@@ -1,24 +1,25 @@
 <!DOCTYPE html>
-<html lang="es">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LOGIN</title>
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8"
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Acceso - TP6_BrunoGomez</title>
+    <link rel="stylesheet" href="styles.css"> <!--Esto vincula el CSS-->
 </head>
 <body>
     <div class="login-container">
-        <h2>Iniciar Sesión</h2>
-        <form id="loginForm">
-            <label for="username">Usuario:</label>
-            <input type="text" id="username" name="username" required>
-            <label for="password">Contraseña:</label>
-            <input type="password" id="password" name="password" required>
+        <h1>Bienvenido</h1>
+        <form id="loginform">
+            <label form="username">Usuario:</label>
+            <input type="text" id="username" pleceholder="Ingrese su usuario" required>
+
+            <label form="password">Contraseña:</label>
+            <input type="password" id="password" placeholder="Ingrese su Contraseña" required>
+
             <button type="submit">Ingresar</button>
         </form>
-        <p id="error-message" style="color:red; display:none;">Usuario o contraseña incorrectos</p>
+        <p id="message"></p> <!-- aqui se vera si el login es correcto o no -->
     </div>
-
-    <script src="script.js"></script>
+    <script src="script.js"></script</script> <!-- vincula el JavaScript -->
 </body>
 </html>

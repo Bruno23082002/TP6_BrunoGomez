@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="es"
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale-1.0">
+    <title>Pagina Principal</title>
+    <link rel="stylesheet" href="styles.css"> <!--Reutilizo el css-->
+</head>
+<body>
+    <div class="main-container">
+        <h1 id="welcomeMessage"></h1> <!-- Mensaje dinamico de bienvenida -->
+
+        <p>Bienvenido a la Pagina Principal. Aqui encontraras:</p>
+        <ul>
+            <li><strong>Pagina 3:</strong> Un formulario para registrar tus datos personales.</li>
+            <li><strong>Pagina 4:</strong> Formulario para enviar mensajes largos</li>
+        </ul>
+
+        <!--Botones de navegacion animados-->
+        <div class="button-container">
+            <button onclick="navigateTo('pagina3.html')">Ir a Página 3</button>
+            <button onclick="navigateTo('pagina4.html')">Ir a Página 4</button>
+            <button onclick="navigateTo('index.html')">Volver al Login</button>
+        </div>
+    </div>
+    <script src="script.js"></script> 
+</body>
+</html>
